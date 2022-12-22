@@ -1,0 +1,195 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font */
+* {
+    font-family: 'Rubik Vinyl', cursive;
+}
+
+/* Regole Generali */
+
+
+/* style */
+main {
+    height: 100vh;
+    display: flex;
+}
+
+#view-player {
+    width: 50%;
+    height: 100vh;
+    background-color: brown;
+
+}
+
+#view-virtualplayer {
+    width: 50%;
+    height: 100vh;
+    background-color: blue;
+}
+
+.container {
+    height: calc(100% - 100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    height: 100px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 80px;
+}
+
+/* Dadi */
+.dado {
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#one, #points-2, #points-3, #points-4, #points-5, #points-6, #aione, #aipoints-2, #aipoints-3, #aipoints-4, #aipoints-5, #aipoints-6  {
+    display: none;
+}
+
+#one {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#aione {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.two-1, .three-3, .four-1, .fifth-4, .six-1 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.two-2, .three-1, .four-4, .fifth-1, .six-5 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.three-2, .fifth-5 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.four-2, .fifth-3, .six-2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    left: 20px;  
+}
+
+.four-3, .fifth-2, .six-4 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.six-3 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 90px;
+    left: 20px;
+}
+
+.six-6 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 90px;
+    right: 20px;
+}
+
+#play {
+    display: inline-block;
+    width: 15%;
+    height: 80px;
+    font-size: 50px;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.42);
+    background-color: greenyellow;
+    position: absolute;
+    bottom: 50px;
+    left: 42.5%;
+    right: 42.5%;
+    cursor: pointer;
+}
+
+#win {
+    font-size: 80px;
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    bottom: 50px;
+    left: 19%;
+    display: none;
+}
+
+#aiwin {
+    font-size: 80px;
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    bottom: 50px;
+    right: 19%;
+    display: none;
+}
+
+#tie {
+    font-size: 80px;
+    position: absolute;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
